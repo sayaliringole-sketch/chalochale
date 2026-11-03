@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking | ChaloChale</title>
+    <script
+      src="https://kit.fontawesome.com/5c532d7eb2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="index.html">
+            <i class="fa-solid fa-plane-departure" aria-hidden="true"></i>
+            <span>ChaloChale</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#primary-navigation"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="primary-navigation">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="destination.html">Destination</a></li>
+              <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+              <li class="nav-item"><a class="nav-link active" href="booking.html" aria-current="page">Booking</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <a class="btn custom-btn ms-lg-3" href="contact.html">Plan My Trip</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="booking-hero">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <p class="eyebrow">Simple booking</p>
+              <h1>Book your next unforgettable trip with ease.</h1>
+              <p class="lead">
+                Tell us where you want to go, when you want to travel, and we’ll help you
+                choose the most comfortable and exciting package for your journey.
+              </p>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="booking-summary">
+                <h3>Trip Snapshot</h3>
+                <ul>
+                  <li><span>Destination</span><strong>Pokhara & Kathmandu</strong></li>
+                  <li><span>Duration</span><strong>5 Days / 4 Nights</strong></li>
+                  <li><span>Package</span><strong>Adventure + Culture</strong></li>
+                  <li><span>Price</span><strong>$899 / person</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking-form-section">
+        <div class="container">
+          <div class="booking-form-wrap">
+            <div class="row g-4">
+              <div class="col-lg-8">
+                <form class="booking-form">
+                  <div class="form-header">
+                    <h2>Travel booking form</h2>
+                    <p>Share your travel details and our team will get back to you shortly.</p>
+                  </div>
+
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="fullName">Full name</label>
+                      <input type="text" id="fullName" placeholder="Your name" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" placeholder="you@example.com" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="phone">Phone number</label>
+                      <input type="tel" id="phone" placeholder="+977 98..." />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="travelDate">Preferred date</label>
+                      <input type="date" id="travelDate" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="destination">Destination</label>
+                      <select id="destination">
+                        <option selected disabled>Select destination</option>
+                        <option>Pokhara</option>
+                        <option>Kathmandu</option>
+                        <option>Everest Base Camp</option>
+                        <option>Lumbini</option>
+                        <option>Bhaktapur Heritage</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="guests">Travelers</label>
+                      <select id="guests">
+                        <option selected disabled>Number of guests</option>
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                        <option>5+ Guests</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <label for="packageType">Package type</label>
+                      <select id="packageType">
+                        <option selected disabled>Select package</option>
+                        <option>Family Tour</option>
+                        <option>Honeymoon</option>
+                        <option>Adventure Trip</option>
+                        <option>Luxury Escape</option>
+                        <option>Custom Itinerary</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <label for="notes">Special requirements</label>
+                      <textarea id="notes" rows="5" placeholder="Tell us about your trip preferences, hotel needs, or travel style..."></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn form-btn">Submit booking request</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-lg-4">
+                <aside class="booking-aside">
+                  <h3>Why book with us?</h3>
+                  <div class="aside-list">
+                    <div class="aside-item">
+                      <i class="fa-solid fa-check"></i>
+                      <p>Custom itinerary planning</p>
+                    </div>
+                    <div class="aside-item">
+                      <i class="fa-solid fa-check"></i>
+                      <p>Trusted local support</p>
+                    </div>
+                    <div class="aside-item">
+                      <i class="fa-solid fa-check"></i>
+                      <p>Flexible package options</p>
+                    </div>
+                    <div class="aside-item">
+                      <i class="fa-solid fa-check"></i>
+                      <p>24/7 travel assistance</p>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
